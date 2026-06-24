@@ -6,7 +6,7 @@
 export const profile = {
   name: 'Pritam Kumar Pal',
   firstName: 'Pritam',
-  role: 'XR Developer & Technical Artist',
+  role: 'Technical Artist & Game Designer',
   email: 'metro1pal2000@gmail.com',
   location: 'Odisha, India',
   splineUrl: 'https://prod.spline.design/EHuXbQAqtPBYDFi8/scene.splinecode',
@@ -22,12 +22,13 @@ export const hero = {
   titleAccent: 'immersive',
   titleTrail: 'worlds.',
   subtitle:
-    'VR / AR / MR developer crafting interactive, high-performance experiences — from first concept to final ship.',
+    'Technical artist & game designer building Unity-powered XR games and simulations, 3D games, and the game UI/UX that ties them together — now weaving GenAI into gameplay.',
   tags: [
-    'VR Technical Artist',
-    '3D Visualization',
-    'Interactive UI/UX Design',
-    'WebXR Development',
+    'Technical Artist',
+    'Game Designer',
+    'Unity • XR & 3D Games',
+    'UI/UX in Figma',
+    'GenAI in Games',
   ],
 };
 
@@ -35,7 +36,7 @@ export const quote = {
   text:
     "Even if it's difficult and time consuming, it doesn't matter, as long as the process is enjoyable",
   author: 'Pritam Kumar Pal',
-  role: 'XR Developer',
+  role: 'Developer, Designer and Dreamer',
   image: '/images/HI111.jpg',
 };
 
@@ -122,27 +123,35 @@ export interface TechCategory {
 export const techCategories: TechCategory[] = [
   {
     id: 1,
-    title: 'XR Development',
+    title: 'XR Games & Simulations',
     description:
-      'Unity-first XR development across AR, VR, and MR — leveraging the Unity XR SDK and Meta SDK for immersive, cross-platform experiences.',
+      'Unity-built AR, VR, and MR — interactive games and training simulations powered by the Unity XR SDK and Meta SDK.',
     icon: 'xr',
-    skills: ['Unity XR SDK', 'Meta SDK', 'OpenXR', 'ARKit / ARCore', 'WebXR'],
+    skills: ['Unity', 'XR (AR/VR/MR)', 'Meta SDK', 'Simulations'],
   },
   {
     id: 2,
-    title: '3D Visualization & UI/UX',
+    title: '3D Game Development',
     description:
-      'Crafting XR interfaces and 3D assets — from UI/UX wireframing in Figma (4+ years) to 3D modelling in Blender for immersive environments.',
+      'Designing and building 3D games in Unity — gameplay systems, mechanics, and end-to-end performance optimization.',
     icon: 'cube',
-    skills: ['Figma', 'UI/UX Design', 'Blender', 'Adobe Creative Suite'],
+    skills: ['Unity', 'C#', '3D Games', 'Optimization'],
   },
   {
     id: 3,
-    title: 'Spatial Computing',
+    title: 'Technical Art & UI/UX',
     description:
-      'Hands-on experience integrating haptic feedback hardware into VR — building physical-digital interaction layers for truly embodied gameplay.',
+      'Bridging art and engineering — game UI/UX designed in Figma, plus 3D assets and scenes shaped in Blender.',
+    icon: 'code',
+    skills: ['Figma', 'Game UI/UX', 'Blender', '3D Assets'],
+  },
+  {
+    id: 4,
+    title: 'GenAI in Games',
+    description:
+      'Exploring generative and agentic AI to make game worlds think and react — smarter NPCs and dynamic systems.',
     icon: 'spatial',
-    skills: ['Haptic Feedback', 'Spatial Audio', 'Gesture Control'],
+    skills: ['GenAI', 'Agentic AI', 'AI NPCs'],
   },
 ];
 
@@ -209,26 +218,38 @@ export const inspirations: Inspiration[] = [
     quote:
       "The next platform will be even more immersive—an embodied internet where you're in the experience, not just looking at it.",
   },
+  {
+    id: 7,
+    name: 'Gabe Newell',
+    role: 'Co-founder & President',
+    company: 'Valve',
+    image: '/images/HI77.png',
+    quote: 'Piracy is almost always a service problem and not a pricing problem.',
+  },
 ];
 
 export const about = {
   heroSubtitle:
-    'XR Developer & Creative Technologist with a passion for immersive experiences',
-  tags: ['XR Developer', 'Creative Tech', 'Immersive Design'],
+    'Technical artist & game designer crafting Unity-powered XR and 3D games, game UI/UX, and GenAI-driven experiences.',
+  tags: ['Technical Artist', 'Game Designer', 'Unity & XR'],
   image: '/images/Pritam3.png',
   video: '/videos/AV1.mp4',
   bio: [
-    'I\'m a passionate XR developer with 4+ years of Unity experience and 3+ years building AR, VR, and MR applications — using the Unity XR SDK and Meta SDK to craft immersive experiences from first concept to final ship. My journey into XR started the moment I watched "Sword Art Online" and realised that what felt like fiction was becoming real.',
-    'I specialise in developing AR, VR, and MR applications, combining solid technical execution with an intermediate eye for XR UI/UX design — shaped by 4+ years working in Figma and several shipped projects across both platforms.',
-    "When I'm not building in virtual spaces, you'll find me exploring new tech, deep diving into upcoming XR products, or sharing knowledge with the community.",
+    'I\'m a technical artist and game designer with 4+ years in Unity — building XR games and simulations across AR, VR, and MR, crafting 3D games, and designing the game UI/UX that ties it all together. My journey started the moment I watched "Sword Art Online" and realised the line between fiction and real tech was thinner than I thought.',
+    'I move comfortably between disciplines — gameplay and systems in Unity, technical art and optimization, and interface design in Figma — and I\'m now weaving GenAI and agentic AI into how games think and react.',
+    "When I'm not building, you'll find me exploring new tech, deep diving into upcoming games and XR hardware, or sharing what I learn with the community.",
     "I genuinely love being part of a team where people share the same obsession — where we can cook up something crazy together, push what's possible in the game industry, and create experiences the player community will truly love.",
   ],
   skills: [
-    { name: 'AR / VR / MR Development', level: 90 },
-    { name: 'Unity (XR & Meta SDK)', level: 85 },
-    { name: 'UI/UX Design (XR & Figma)', level: 78 },
-    { name: '3D Modelling (Blender)', level: 55 },
+    { name: 'Unity', years: '4 yrs', level: 75 },
+    { name: 'VR Development', years: '3+ yrs', level: 80 },
+    { name: 'AR Development', years: '1.5 yrs', level: 70 },
+    { name: 'UI/UX with Figma', years: '2 yrs', level: 80 },
+    { name: 'Version Control · GitHub', years: '3 yrs', level: 80 },
+    { name: 'Working in a Team', years: '4+ yrs', level: 85 },
+    { name: 'Working Solo', years: '2 yrs', level: 70 },
   ],
+  learning: ['GenAI', 'Agentic AI', 'Unreal Engine', 'Blender', 'MR Development', '2.5D Games'],
   milestones: [
     {
       title: '3+ Months Internship',
@@ -274,6 +295,11 @@ export const about = {
     },
   ],
   education: [
+    {
+      degree: 'M.Sc. in Game Technologies',
+      institution: 'Hochschule Bonn-Rhein-Sieg, Germany',
+      period: '2025 - current',
+    },
     {
       degree: 'Bachelor of Technology - BTech, Computer Science',
       institution: 'Kalinga Institute of Industrial Technology, Bhubaneswar',

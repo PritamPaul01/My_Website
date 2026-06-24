@@ -31,18 +31,20 @@ export default function Hero() {
       onMouseMove={onMouseMove}
       className="relative flex min-h-screen w-full items-center overflow-hidden"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(rgba(167,139,250,0.16)_1px,transparent_1px)] [background-size:28px_28px] opacity-50" />
+      <div className="absolute inset-0 bg-[radial-gradient(rgba(255,90,100,0.16)_1px,transparent_1px)] [background-size:28px_28px] opacity-50" />
 
       <motion.div
         style={{ x: gx, y: gy }}
-        className="pointer-events-none absolute right-[8%] top-[18%] h-[420px] w-[420px] rounded-full bg-violet-600/25 blur-[90px]"
+        className="pointer-events-none absolute right-[4%] top-[10%] h-[560px] w-[560px] rounded-full bg-violet-500/35 blur-[120px]"
       />
       <motion.div
         style={{ x: gy, y: gx }}
-        className="pointer-events-none absolute bottom-[-10%] left-[10%] h-72 w-72 rounded-full bg-accent/15 blur-[80px]"
+        className="pointer-events-none absolute bottom-[-6%] right-[24%] h-80 w-80 rounded-full bg-accent/20 blur-[90px]"
       />
 
-      <motion.div style={{ y: yRobot }} className="absolute right-0 top-0 hidden h-full w-[55%] md:block">
+      {/* Wide, landscape canvas so the in-scene "Hello" text isn't clipped on
+          the right (a narrow ~square canvas crops the scene horizontally). */}
+      <motion.div style={{ y: yRobot }} className="absolute right-0 top-0 hidden h-full w-[68%] md:block">
         <SplineRobot url={profile.splineUrl} />
       </motion.div>
 

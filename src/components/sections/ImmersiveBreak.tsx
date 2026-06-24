@@ -26,12 +26,12 @@ export default function ImmersiveBreak() {
               className="absolute inset-0"
               style={{
                 background: `
-                  radial-gradient(ellipse 85% 65% at 15% 55%, rgba(139, 92, 246, 0.60) 0%, transparent 65%),
-                  radial-gradient(ellipse 60% 55% at 88% 12%, rgba(232, 121, 201, 0.45) 0%, transparent 55%),
-                  radial-gradient(ellipse 70% 65% at 62% 88%, rgba(109, 40, 217, 0.65) 0%, transparent 60%),
-                  radial-gradient(ellipse 45% 45% at 48% 28%, rgba(167, 139, 250, 0.30) 0%, transparent 50%),
-                  radial-gradient(ellipse 50% 40% at 75% 60%, rgba(196, 77, 255, 0.20) 0%, transparent 50%),
-                  linear-gradient(145deg, #07050f 0%, #12092a 30%, #0e0620 60%, #09070f 100%)
+                  radial-gradient(ellipse 85% 65% at 15% 55%, rgba(224, 30, 48, 0.55) 0%, transparent 65%),
+                  radial-gradient(ellipse 60% 55% at 88% 12%, rgba(255, 74, 61, 0.42) 0%, transparent 55%),
+                  radial-gradient(ellipse 70% 65% at 62% 88%, rgba(140, 15, 24, 0.62) 0%, transparent 60%),
+                  radial-gradient(ellipse 45% 45% at 48% 28%, rgba(255, 90, 100, 0.28) 0%, transparent 50%),
+                  radial-gradient(ellipse 50% 40% at 75% 60%, rgba(200, 20, 40, 0.22) 0%, transparent 50%),
+                  linear-gradient(145deg, #0c0506 0%, #1c0709 30%, #160506 60%, #0a0405 100%)
                 `,
               }}
             />
@@ -40,8 +40,8 @@ export default function ImmersiveBreak() {
               className="absolute inset-0 opacity-[0.07]"
               style={{
                 backgroundImage: `
-                  linear-gradient(rgba(139,92,246,1) 1px, transparent 1px),
-                  linear-gradient(90deg, rgba(139,92,246,1) 1px, transparent 1px)
+                  linear-gradient(rgba(255,70,80,1) 1px, transparent 1px),
+                  linear-gradient(90deg, rgba(255,70,80,1) 1px, transparent 1px)
                 `,
                 backgroundSize: '56px 56px',
               }}
@@ -50,7 +50,7 @@ export default function ImmersiveBreak() {
             <div
               className="absolute inset-0 opacity-30"
               style={{
-                backgroundImage: `radial-gradient(circle, rgba(200,180,255,0.8) 1px, transparent 1px)`,
+                backgroundImage: `radial-gradient(circle, rgba(255,180,180,0.8) 1px, transparent 1px)`,
                 backgroundSize: '90px 90px',
                 backgroundPosition: '0 0, 45px 45px',
               }}

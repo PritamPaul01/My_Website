@@ -70,7 +70,10 @@ export default function SelectedWork() {
                 onMouseEnter={() => setActive(i)}
                 onMouseLeave={() => setActive(null)}
               >
-                <Link href="/projects" className="group flex items-center justify-between gap-6 py-7">
+                <Link
+                  href={`/projects#project-${project.id}`}
+                  className="group flex items-center justify-between gap-6 py-7"
+                >
                   <div className="flex items-baseline gap-5">
                     <span className="text-sm tabular-nums text-muted">
                       {String(i + 1).padStart(2, '0')}
@@ -106,7 +109,7 @@ export default function SelectedWork() {
           {projects.map((project) => (
             <Link
               key={project.id}
-              href="/projects"
+              href={`/projects#project-${project.id}`}
               className="overflow-hidden rounded-2xl border border-white/10 bg-ink-800"
             >
               <div className="relative aspect-video">

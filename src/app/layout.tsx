@@ -6,6 +6,8 @@ import CustomCursor from '@/components/cursor/CustomCursor';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ScrollProgress from '@/components/ui/ScrollProgress';
+import ScrollToTop from '@/components/ui/ScrollToTop';
+import Preloader from '@/components/ui/Preloader';
 import { profile } from '@/lib/content';
 
 const sora = Sora({
@@ -32,12 +34,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={sora.variable}>
       <body>
+        <Preloader />
         <SmoothScroll>
           <ScrollProgress />
           <CustomCursor />
           <Navbar />
           {children}
           <Footer />
+          <ScrollToTop />
         </SmoothScroll>
       </body>
     </html>

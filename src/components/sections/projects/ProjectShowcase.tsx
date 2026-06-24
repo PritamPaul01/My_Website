@@ -11,7 +11,10 @@ export default function ProjectShowcase() {
           const flip = i % 2 === 1;
           return (
             <Reveal key={project.id}>
-              <div className="grid items-center gap-10 md:grid-cols-2">
+              <div
+                id={`project-${project.id}`}
+                className="grid scroll-mt-28 items-center gap-10 md:grid-cols-2"
+              >
                 <div className={cn(flip && 'md:order-2')}>
                   <VideoCard poster={project.image} video={project.video} title={project.title} />
                 </div>

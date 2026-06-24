@@ -138,7 +138,7 @@ export default function CustomCursor() {
           <path
             d="M5 2.5 L5 18.5 L9.2 14.3 L12.2 20.5 L14.4 19.4 L11.4 13.4 L17 13.4 Z"
             fill="#ffffff"
-            stroke="#0a0813"
+            stroke="#0a0607"
             strokeWidth="1"
             strokeLinejoin="round"
           />

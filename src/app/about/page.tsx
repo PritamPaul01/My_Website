@@ -52,30 +52,53 @@ export default function AboutPage() {
 
       <section className="relative overflow-hidden py-20 md:py-28">
         <div className="absolute inset-0 bg-gradient-to-br from-violet-700/15 via-ink to-ink" />
-        <div className="relative mx-auto grid max-w-5xl gap-12 px-6 md:grid-cols-2">
+        <div className="relative mx-auto max-w-5xl px-6">
           <Reveal>
-            <h3 className="text-2xl font-bold">Skills</h3>
-            <div className="mt-6">
+            <h3 className="text-2xl font-bold md:text-3xl">
+              Skills &amp; <span className="text-gradient">Expertise</span>
+            </h3>
+            <div className="mt-7">
               <SkillBars />
             </div>
 
-            <h3 className="mt-10 text-2xl font-bold">Career Highlights</h3>
-            <div className="mt-5 space-y-5">
-              {about.milestones.map((milestone) => (
-                <div key={milestone.title} className="flex gap-3">
-                  <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-violet-400" />
-                  <div>
-                    <p className="font-semibold">{milestone.title}</p>
-                    <p className="text-sm text-muted">{milestone.detail}</p>
-                  </div>
-                </div>
-              ))}
+            <div className="mt-9">
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-violet-300">
+                Currently leveling up
+              </p>
+              <div className="mt-3.5 flex flex-wrap gap-2.5">
+                {about.learning.map((item) => (
+                  <span
+                    key={item}
+                    className="inline-flex items-center gap-2 rounded-full border border-dashed border-violet-400/40 bg-violet-500/5 px-3.5 py-1.5 text-sm text-paper/85"
+                  >
+                    <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           </Reveal>
 
-          <Reveal delay={0.1}>
-            <AboutVideo />
-          </Reveal>
+          <div className="mt-14 grid items-stretch gap-12 md:grid-cols-2">
+            <Reveal>
+              <h3 className="text-2xl font-bold">Career Highlights</h3>
+              <div className="mt-5 space-y-5">
+                {about.milestones.map((milestone) => (
+                  <div key={milestone.title} className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-violet-400" />
+                    <div>
+                      <p className="font-semibold">{milestone.title}</p>
+                      <p className="text-sm text-muted">{milestone.detail}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.1}>
+              <AboutVideo />
+            </Reveal>
+          </div>
         </div>
       </section>
 
@@ -123,7 +146,7 @@ export default function AboutPage() {
             subtitle="My academic background and qualifications"
           />
 
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {about.education.map((edu, i) => (
               <Reveal key={i} delay={i * 0.08}>
                 <div className="h-full rounded-2xl border border-white/10 bg-white/[0.03] p-6">

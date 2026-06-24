@@ -43,13 +43,13 @@ export default function TechStack() {
       <div className="absolute inset-0 bg-gradient-to-br from-violet-700/20 via-ink to-ink" />
       <div className="relative mx-auto max-w-6xl px-6">
         <SectionHeading
-          eyebrow="Tech expertise"
+          eyebrow="What I do"
           title={
             <>
-              Cutting-edge <span className="text-gradient">XR technology</span> &amp; tools
+              Building <span className="text-gradient">games &amp; XR</span> — and the tools I use
             </>
           }
-          subtitle="My work integrates the latest XR technologies to create immersive, interactive experiences that push the boundaries of digital interaction."
+          subtitle="From Unity gameplay and 3D worlds to game UI/UX and GenAI — the disciplines and tools I work across as a technical artist and game designer."
         />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

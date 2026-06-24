@@ -55,7 +55,7 @@ export default function ContactPage() {
                 alt={profile.name}
                 width={600}
                 height={400}
-                className="h-56 w-full object-cover"
+                className="h-56 w-full object-cover object-top"
               />
             </div>
           </Reveal>
@@ -92,7 +92,7 @@ export default function ContactPage() {
               src={contactPage.inspiration.image}
               alt="VR innovation"
               fill
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 768px) 100vw, 45vw"
             />
           </Reveal>

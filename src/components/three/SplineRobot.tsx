@@ -94,7 +94,7 @@ export default function SplineRobot({ url }: { url: string }) {
 
 function RobotFallback({ hidden }: { hidden: boolean }) {
   const eye =
-    'absolute top-[46px] h-6 w-6 rounded-full bg-[radial-gradient(circle_at_40%_35%,#ffd0e0,#e84b9c_60%,#7a1f4a)] shadow-[0_0_14px_rgba(232,75,156,0.8)]';
+    'absolute top-[46px] h-6 w-6 rounded-full bg-[radial-gradient(circle_at_40%_35%,#ffd5d5,#ff2d3a_60%,#7a0d14)] shadow-[0_0_14px_rgba(255,45,58,0.8)]';
   return (
     <div
       className={cn(
@@ -104,7 +104,7 @@ function RobotFallback({ hidden }: { hidden: boolean }) {
       aria-hidden="true"
     >
       <div className="animate-float">
-        <div className="relative h-[120px] w-[180px] rounded-[26px] border border-violet-400/30 bg-gradient-to-br from-ink-700 to-ink-800 shadow-[0_30px_80px_rgba(124,92,255,0.35)]">
+        <div className="relative h-[120px] w-[180px] rounded-[26px] border border-violet-400/30 bg-gradient-to-br from-ink-700 to-ink-800 shadow-[0_30px_80px_rgba(224,30,48,0.32)]">
           <span className={cn(eye, 'left-[44px]')} />
           <span className={cn(eye, 'right-[44px]')} />
         </div>

@@ -10,7 +10,7 @@ interface PageHeroProps {
 export default function PageHero({ title, subtitle, tags }: PageHeroProps) {
   return (
     <section className="relative flex min-h-[68vh] items-center justify-center overflow-hidden pt-24">
-      <div className="absolute inset-0 bg-[radial-gradient(rgba(167,139,250,0.16)_1px,transparent_1px)] [background-size:28px_28px] opacity-40" />
+      <div className="absolute inset-0 bg-[radial-gradient(rgba(255,90,100,0.16)_1px,transparent_1px)] [background-size:28px_28px] opacity-40" />
       <div className="pointer-events-none absolute left-1/2 top-1/3 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-violet-600/20 blur-[110px]" />
       <div className="relative mx-auto max-w-4xl px-6 text-center">
         <Reveal>

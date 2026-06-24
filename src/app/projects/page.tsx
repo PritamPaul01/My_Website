@@ -5,6 +5,7 @@ import ProjectShowcase from '@/components/sections/projects/ProjectShowcase';
 import MockupsGallery from '@/components/sections/projects/MockupsGallery';
 import Roadmap from '@/components/sections/projects/Roadmap';
 import Process from '@/components/sections/projects/Process';
+import HashScroll from '@/components/util/HashScroll';
 import { projectsPage } from '@/lib/content';
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <main>
+      <HashScroll />
       <PageHero
         title={
           <>

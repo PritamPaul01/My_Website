@@ -8,26 +8,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Maroon-tinted near-black canvas (cinematic crimson cyberpunk)
         ink: {
-          DEFAULT: '#0a0813',
-          900: '#070510',
-          800: '#120e1f',
-          700: '#1a1230',
-          600: '#231a3a',
+          DEFAULT: '#0a0607',
+          900: '#050304',
+          800: '#170a0c',
+          700: '#210d10',
+          600: '#2c1115',
         },
+        // NOTE: 'violet' is a legacy token key — its values are now the
+        // primary CRIMSON / BLOOD-RED so the whole site re-themes without
+        // renaming hundreds of utility classes.
         violet: {
-          300: '#c4b5fd',
-          400: '#a78bfa',
-          500: '#8b5cf6',
-          600: '#7c5cff',
-          700: '#6d28d9',
+          300: '#ff7d86',
+          400: '#f5384a',
+          500: '#e01e30',
+          600: '#b3151f',
+          700: '#8c0f18',
         },
+        // Secondary — hot coral / ember red
         accent: {
-          DEFAULT: '#e879c9',
-          500: '#e84b9c',
+          DEFAULT: '#ff4a3d',
+          500: '#ff2d3a',
         },
-        paper: '#f4f2ff',
-        muted: '#b3acc7',
+        paper: '#f6efec',
+        muted: '#a99c9c',
       },
       fontFamily: {
         sans: ['var(--font-sora)', 'system-ui', 'sans-serif'],
